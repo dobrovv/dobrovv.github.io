@@ -1,0 +1,23 @@
+{
+  "name": "wordsandbytes server",
+  "version": "0.0.1",
+  "description": "Personal website hosted at wordsandbytes.co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobrovv/dobrovv.github.io.git"
+  },
+  "keywords": [
+    "website server"
+  ],
+  "author": "Vladislav Dobrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobrovv/dobrovv.github.io/issues"
+  },
+  "homepage": "https://github.com/dobrovv/dobrovv.github.io#readme"
+}
