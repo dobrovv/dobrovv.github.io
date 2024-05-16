@@ -5,6 +5,11 @@ const path = require('path');
 const hostname = 'localhost';
 const port = 80;
 
+const mimeTypes = {
+  ".js" : "text/javascript",
+  ".mjs" : "text/javascript",
+}
+
 const server = http.createServer((req, res) => {
     console.log('Request for ' + req.url + ' by method ' + req.method);
 
@@ -26,7 +31,9 @@ const server = http.createServer((req, res) => {
           }
 
           res.statusCode = 200;
-          //res.setHeader('Content-Type', 'text/html');
+          // Sets content type, required for modules
+          if (mimeTypes[fileExt])
+            res.setHeader('Content-Type', mimeTypes[fileExt] );
           fs.createReadStream(filePath).pipe(res);
         });
     }

@@ -73,22 +73,22 @@
 		    <div class="container">
 			    <h2 class="title mb-3">About Me</h2>
 			    
-			    <p>Talanted Computer Engineer with a passion for embedded and web development and a strong foundation in embedded, network and database systems. Looking forward to work on embeded projects to grow and gain news technical skills within a team environment.</p>
+			    <p>Talented Computer Engineer with a passion for embedded and web development and a strong foundation in embedded, network and database systems. Looking forward to work on embeded projects to grow and gain news technical skills within a team environment.</p>
 			    <figure><img class="img-fluid" src="https://www.qt.io/hubfs/Embedded%20Talk/Images/Feature%20Image%20Building%20Process.jpg" alt="image"></figure>
 			    <h5 class="mt-5">My Skills</h5>
 			    <p> <ul><li>During my studies I gained theoretical understanding of data structures, software design patterns, microprocessors,  digital design, network protocols, databases, build systems, and operating systems.</li>
-<li>I have a strong understanding of C, C++, and Python. I follow the new additions to the standarts to stay up-to-date with modern language practices. I also possess working knowledge of C#, Java, Kotlin, PHP, and JavaScript.</li>
-<li>I have experience in embedded programming with microcontrollers such as Arduino, HCS12, STM32, ATmega8 and Raspberry Pi. I have a good understanding of peripheral control trougth IRQ, DMA, timers, GPIO, PWM, DAC, as well as use of communication protocols such as UART, I2S, and S/PDIF, and experience in control of wireless transmitters such as IR, Radio, GSM, Bluetooth and BLE.</li>
- <li>I have a deep understanding of network systems, and practical understanding of sockets as well as knowledge of UDP and TCP/IP protocols, understanding of OSI layers, TCP congestion and flow controls, knowledge of HTTP. I have experience in network analysis with Wireshark and Postman, and some experience _configuring CISCO routers and switches.
+<li>I have a strong understanding of C, C++, and Python. I follow the new additions to the standards to stay up-to-date with modern language practices. I also possess working knowledge of C#, Java, Kotlin, PHP, and JavaScript.</li>
+<li>I possess a strong background in embedded programming, experience with microcontrollers such as Arduino, HCS12, STM32, ATmega8 and Raspberry Pi. I have a good understanding of peripheral control with IRQ, DMA, timers, GPIO, PWM, DAC, as well as use of communication protocols such as UART, I2S, and S/PDIF, and practical experience in control of wireless transmitters such as IR, Radio, GSM, Bluetooth and BLE.</li>
+ <li>I have a deep understanding of network systems, and practical understanding of sockets as well as knowledge of UDP and TCP/IP protocols, understanding of OSI layers, TCP congestion and flow controls, knowledge of HTTP. I have experience in network analysis with Wireshark and Postman, and some experience configuring CISCO routers and switches.
  </li>
 <li>I have a good understanding of modern operating systems including Linux and Windows, experience with bash scripts, knowledge of system-level APIs such as POSIX and WinAPI, experience in multithreading, and knowledge of interprocess communication using pipes, POSIX messages, shared memory, and memory-mapped files.</li>
 <li>I have experience with Android and Qt development frameworks, and I have successfully developed and deployed several desktop and mobile applications.</li>
 <li>I understand RTOS principles, and I have experience in developing real time applications with QNX .</li>
 <li>I am able to read electronic circuit schematics and analyze circuits using circuit laws. I have some experience with PCB design in OrCAD.</li>
-<li>I know how to design FPGA components in VHDL and Verilog using structural and behavioral styles, and validate _the designs using test-benches.</li>
-<li>I have experience in full-stack web development, having developed and deployed several websites I gained experience with modern web frameworks including React, Django, Flask, Express, Laravel, Node.js, ASP.NET and Bootstrap, and I have practical knowledge of several backend languages such as Python, PHP, C#, Java, SQL, SQLite, MySQL.</li>
-<li>I have some experience with common development processes like Scrum and Agile methodologies and understanding of team managment.</li>
-<li>I have practical knowledge of GIT, gnu/llvm, Android and Visual Studio toolchains.</li>
+<li>I know how to design FPGA components in VHDL and Verilog using structural and behavioral styles, and validate the designs using test-benches.</li>
+<li>I have expertise in full-stack web development, having created and launched several websites using modern web frameworks such as Bootstrap, React, jQuery, Django, Flask, Express, Laravel, Node.js, ASP.NET. I have good knowledge of backend languages such as Python, PHP, C#, JSON, SQL, and practical experience with SQLite, MySQL and Firebase databases.</li>
+<li>I have some experience with popular development processes such as Scrum and Agile methodologies. Additionaly I have an understanding of team management principles.</li>
+<li>I have practical knowledge of a range of toolchains including GIT, gnu/llvm, Android and Visual Studio.</li>
 </ul></p>
 			    <h5 class="mt-5 mb-3">My Projects</h5>
 			    <div class="media  mb-3">
@@ -159,6 +159,7 @@
 	    </article><!--//about-section-->
 	    
 	    <section class="cta-section theme-bg-light py-5">
+
 		    <div class="container text-center">
 			    <h2 class="heading">Newsletter</h2>
 			    <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
@@ -167,10 +168,17 @@
                         <label class="sr-only" for="semail">Your email</label>
                         <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
                     </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <button type="submit" id="subscribebtn" class="btn btn-primary">Subscribe</button>
                 </form>
 		    </div><!--//container-->
 	    </section>
+
+      <div class="alert alert-success alert-dismissible fade show d-none mx-5 px-5" role="alert">
+        <strong>Holy guacamole!</strong> your subscription is saved, stay tuned for updates.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 	    
 	    <footer class="footer text-center py-2 theme-bg-dark">
 		   
@@ -182,8 +190,8 @@
     </div><!--//main-wrapper-->
     
 
-    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
-    <div id="config-panel" class="config-panel d-none d-lg-block">
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)******  --> 
+    <!-- <div id="config-panel" class="config-panel d-none d-lg-block">
         <div class="panel-inner">
             <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6" ></i></a>
             <h5 class="panel-title">Choose Colour</h5>
@@ -197,7 +205,7 @@
                 <li class="theme-7  active list-inline-item"><a data-style="assets/css/theme-1.css" href="#"></a></li>
                 <li class="theme-8  list-inline-item"><a data-style="assets/css/theme-8.css" href="#"></a></li>
             </ul>
-            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a> -->
         </div><!--//panel-inner-->
     </div><!--//configure-panel-->
 
@@ -209,7 +217,10 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
     
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script src="assets/js/demo/style-switcher.js"></script>     
+    <!-- <script src="assets/js/demo/style-switcher.js"></script>  -->
+
+    <!-- Firebase -->
+    <script type="module" src="assets/js/database.js"></script>
     
 
 </body>
