@@ -8,6 +8,7 @@ const port = 80;
 const mimeTypes = {
   ".js" : "text/javascript",
   ".mjs" : "text/javascript",
+  "md" : "text/javascript"
 }
 
 const server = http.createServer((req, res) => {
